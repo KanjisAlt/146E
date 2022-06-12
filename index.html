@@ -141,6 +141,7 @@
               // TODO: rest of exploit goes here
 
               port.postMessage("done!");
+              port.postMessage("primitives are setup!")
             } catch(e) { // send exception strings to main thread (for debugging)
               port.postMessage("Exception!!");
               port.postMessage(e.toString());
